@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!--<link rel="stylesheet" href="css/style.css" media="screen and (max-width: 1200px)"/>-->
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/responsividade.css" />
+    <meta charset="UTF-8" />
+    <title>Overload Games</title>
+  </head>
+  <body>
+    <div class="line"></div>
+    <header>
+      <div id="header-container">
+        <h1 id="title">Overload Games</h1>
+
+        <nav id="links">
+          <a href="index.html">Home</a>
+          <a href="games.html">Jogos</a>
+          <a href="contato.html">Contato</a>
+          <a href="cadastro.html">Cadastro</a>
+          <a href="carrinho.html"
+            ><img
+              id="carrinho"
+              src="imagens/carrinho.png"
+              alt="Carrinho de Compras"
+          /></a>
+        </nav>
+      </div>
+    </header>
+    <hr />
+    <main>
+      <h3 class="subtitle" id="highlights">
+        Seu próximo jogo favorito está aqui!
+      </h3>
+      <h4 class="subtitle" id="highlights">Carrinho</h4>
+      <section id="cart-container"></section>
+      <div id="botao"></div>
+      <dialog id="dialog-message">
+        <div>
+          <h4 id="dialog-message-text"></h4>
+          <button id="dialog-message-close" class="card-button">OK</button>
+        </div>
+      </dialog>
+      <dialog id="dialog-coupon">
+        <div>
+          <h4>Insira o cupom</h4>
+          <input id="dialog-coupon-value" type="text" />
+          <button id="dialog-coupon-close" class="card-button">OK</button>
+        </div>
+      </dialog>
+    </main>
+    <hr />
+    <footer>
+      <div id="contact">
+        Telefone: (xx) xxxx-xxxx
+        <span>SAC: xxxx xxx xxxx</span>
+        <span>Email: overloadgames@gmail.com</span>
+      </div>
+      <div id="social-media">
+        Nos acompanhe nas redes sociais:
+        <span><a href="">Facebook</a></span>
+        <span><a href="">Instagram</a></span>
+        <span><a href="">Twitter</a></span>
+      </div>
+    </footer>
+    <div class="line"></div>
+    <script src="js/carrinho.js"></script>
+  </body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contato.css" />
+    <link rel="stylesheet" href="css/responsividade.css" />
+    <meta charset="UTF-8" />
+    <title>Overload Games</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="line"></div>
+    <header>
+      <div id="header-container">
+        <h1 id="title">Overload Games</h1>
+
+        <nav id="links">
+          <a href="index.html">Home</a>
+          <a href="games.html">Jogos</a>
+          <a href="contato.html">Contato</a>
+          <a href="cadastro.html">Cadastro</a>
+          <a href="carrinho.html"
+            ><img
+              id="carrinho"
+              src="imagens/carrinho.png"
+              alt="Carrinho de Compras"
+          /></a>
+        </nav>
+      </div>
+    </header>
+
+    <hr />
+    <main>
+      <h3 class="subtitle" id="highlights">Deseja nos contatar?</h3>
+      <div class="container">
+        <form action="">
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">Primeiro nome:</label>
+            </div>
+
+            <div class="col-75">
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Nome..."
+              />
+              <span class="error fname-error"> </span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Sobrenome:</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Sobrenome..."
+              />
+              <span class="error lname-error"> </span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Email:</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="text"
+                id="email"
+                name="Email"
+                placeholder="Email..."
+              />
+              <span class="error email-error"> </span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="country">Assunto:</label>
+            </div>
+            <div class="col-75">
+              <select id="country" name="Assunto">
+                <option value="Dúvidas">Dúvidas</option>
+                <option value="Reclamações">Reclamações</option>
+                <option value="Sugestões">Sugestões</option>
+                <option value="Elogios">Elogios</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">Mensagem:</label>
+            </div>
+            <div class="col-75">
+              <textarea
+                id="subject"
+                name="Mensagem"
+                placeholder="Mensagem..."
+                style="height: 200px"
+              ></textarea>
+              <span class="error subject-error"> </span>
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <input type="submit" value="Enviar" id="button" />
+            <span id="fname-error"> </span>
+          </div>
+        </form>
+      </div>
+
+      <dialog id="dialog-message">
+        <div>
+          <h4 id="dialog-message-text"></h4>
+          <button id="dialog-message-close" class="card-button">OK</button>
+        </div>
+      </dialog>
+    </main>
+
+    <div class="div-footer">
+      <hr />
+      <footer id="rodape">
+        <div id="contact">
+          Telefone: (xx) xxxx-xxxx
+          <span>SAC: xxxx xxx xxxx</span>
+          <span>Email: overloadgames@gmail.com</span>
+        </div>
+        <div id="social-media">
+          Nos acompanhe nas redes sociais:
+          <span><a href="">Facebook</a></span>
+          <span><a href="">Instagram</a></span>
+          <span><a href="">Twitter</a></span>
+        </div>
+      </footer>
+      <div class="line"></div>
+    </div>
+
+    <script type="text/javascript" src="js/contato.js"></script>
+  </body>
+</html>

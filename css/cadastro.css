@@ -1,0 +1,95 @@
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type="submit"] {
+  background-color: #721e78;
+  color: white;
+  padding: 12px 20px;
+  width: 10%;
+  border-radius: 4px;
+  line-height: 0;
+  cursor: pointer;
+  float: right;
+}
+
+input[type="submit"]:hover {
+  background-color: #b87fc6;
+}
+
+.container {
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 20px;
+  width: 100%;
+}
+.col-75 input {
+  width: 100%;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: right;
+  width: 75%;
+  margin-top: 6px;
+  height: 100%;
+}
+.col-75 input {
+  width: 100%;
+  height: 20p;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (min-height: 750px) {
+  .div-footer {
+    width: 100%;
+    height: 110px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.errorInput {
+  border: 2px solid red !important;
+}
+
+.error.display-error {
+  display: inline;
+  margin-left: 20px;
+  color: rgb(24, 19, 19);
+  transform: translate(-20px);
+}
+.error {
+  display: none;
+}

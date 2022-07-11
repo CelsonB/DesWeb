@@ -1,0 +1,627 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #cccccc;
+}
+
+#title {
+  color: #cccccc;
+  font-weight: bold;
+  font-size: 60px;
+  text-shadow: 4px 4px #721e78;
+}
+
+.subtitle {
+  margin: 0;
+  font-family: "Bebas Neue", cursive;
+  font-size: 35px;
+  color: #721e78;
+  margin-top: 15px;
+}
+
+#highlights {
+  width: 100%;
+}
+
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+h4 {
+  font-weight: lighter;
+}
+
+#ordenar {
+  font-family: "Bebas Neue", cursive;
+  font-size: 25px;
+  margin-right: 6px;
+}
+
+select {
+  font-family: "Bebas Neue", cursive;
+  font-size: 17px;
+}
+
+#info-games {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 15px;
+}
+
+#info-games #highlights {
+  margin-top: 0px;
+}
+
+#container-order {
+  display: flex;
+}
+
+header {
+  background-color: #2c2c2c;
+  color: #cccccc;
+  font-size: 25px;
+  font-family: "Bebas Neue", cursive;
+  display: flex;
+  justify-content: center;
+}
+
+.line {
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(to right, #b87fc6 0%, #721e78 100%);
+}
+
+main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#games {
+  width: 100%;
+}
+
+#header-container {
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  height: 100px;
+  position: relative;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+}
+
+#links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#links a {
+  margin-left: 15px;
+  font-size: 30px;
+}
+
+#banner img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  border-color: rgb(26 26 26 / 31%);
+  object-fit: cover;
+}
+
+.banner-img {
+  flex: 0 0 100%;
+  position: relative;
+}
+
+#banner {
+  position: relative;
+  width: 100%;
+}
+
+#banner-imgs {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.banner-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+  transition: ease color 250ms;
+  z-index: 1;
+}
+
+.banner-arrow:hover {
+  color: #b4b4b4;
+}
+
+#banner-arrow-left {
+  left: 16px;
+  text-shadow: -2px 3px 4px black;
+}
+
+#banner-arrow-right {
+  right: 16px;
+  text-shadow: 2px 3px 4px black;
+}
+
+.banner-info {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #cccccc;
+  font-family: "Bebas Neue", cursive;
+  border-radius: 12px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.banner-name {
+  font-size: 50px;
+  margin-left: 30px;
+  color: #cccccc;
+}
+
+.banner-info-text {
+  position: absolute;
+  left: 0px;
+  bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-shadow: 3px 3px #721e78;
+}
+
+.banner-browse {
+  margin-right: 30px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+
+#carrinho {
+  width: 35px;
+}
+
+.main-card-image {
+  width: 100%;
+  height: 140px;
+  margin-top: 0px;
+  border-radius: 5px 5px 0px 0px;
+  position: relative;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 20px);
+  align-items: center;
+  padding: 0px 10px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+footer {
+  background-color: #2c2c2c;
+  color: #cccccc;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer span {
+  margin-left: 50px;
+}
+
+#social-media {
+  margin-top: 10px;
+}
+
+#social-media a {
+  color: #b87fc6;
+}
+
+.card-header {
+  color: #cccccc;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header nav {
+  margin-right: 5rem;
+}
+
+.card-header h1 {
+  margin-left: 5rem;
+}
+
+.card-container {
+  display: flex;
+  width: 100%;
+}
+
+.card-body {
+  background-color: #ffffff;
+  width: 25%;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 12px;
+  border-color: rgb(26 26 26 / 31%);
+  box-shadow: 2px 1px 0px #c1c0c0;
+  transition: background-color 0.5s;
+  font-family: "Bebas Neue", cursive;
+  font-size: 23px;
+  padding: 10px;
+}
+
+.main-card-body {
+  padding: 0px;
+  background-color: #ffffff;
+}
+
+.card-body:hover {
+  background-color: #dab8e2;
+}
+
+.cart-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.card-cart-body {
+  background-color: #ffffff;
+  width: 98%;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  border: 1px solid;
+  border-radius: 12px;
+  border-color: rgb(26 26 26 / 31%);
+  box-shadow: 2px 1px 0px #c1c0c0;
+  transition: background-color 0.5s;
+  font-family: "Bebas Neue", cursive;
+  font-size: 23px;
+  padding: 10px;
+}
+
+.cart-card-section {
+  margin: 24px;
+}
+
+.cart-subtitle {
+  margin: 0;
+  font-family: "Bebas Neue", cursive;
+  color: #721e78;
+  margin-top: 15px;
+}
+
+.games-cart-container {
+  width: 100%;
+  background-color: #ffffff;
+  margin: 5px;
+  border: 1px solid;
+  border-radius: 12px;
+  border-color: rgb(26 26 26 / 31%);
+  box-shadow: 2px 1px 0px #c1c0c0;
+  transition: background-color 0.5s;
+  font-family: "Bebas Neue", cursive;
+  font-size: 23px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.cart-button {
+  font-family: "Bebas Neue", cursive;
+  background-color: #721e78;
+  font-size: 20px;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 25px;
+  width: 39%;
+}
+
+.card-button {
+  font-family: "Bebas Neue", cursive;
+  background-color: #721e78;
+  font-size: 20px;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 25px;
+  outline: none;
+  cursor: pointer;
+}
+
+.cart-button a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.card-button a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.price {
+  margin-top: 12px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+nav a {
+  text-transform: uppercase;
+  color: #cccccc;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 10px 10px 10px 10px;
+  transition: 0.5s all;
+}
+
+header a:hover {
+  color: #ffffff;
+  background-color: #b87fc6;
+}
+
+.card-image {
+  width: 100px;
+  height: 150px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  * #highlights {
+    padding: 0px 35px;
+  }
+
+  #highlights {
+    padding: 0px 35px;
+  }
+
+  .main-card-image {
+    height: 140px;
+  }
+
+  .card-info {
+    padding: 0px;
+  }
+
+  #banner-name {
+    font-size: 40px;
+  }
+
+  #banner {
+    margin: 0px 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-card-image {
+    height: 100px;
+  }
+
+  .card-info {
+    padding: 0px;
+  }
+
+  #banner-name {
+    font-size: 40px;
+  }
+
+  .price {
+    font-size: 20px;
+  }
+
+  #title {
+    font-size: 34px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #title {
+    font-size: 15px;
+    text-shadow: 2px 2px #721e78;
+  }
+
+  #highlights {
+    padding: 0px 10px;
+    margin-top: 0px;
+  }
+
+  #links a {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+
+  #header-container {
+    padding: 5px;
+    height: 45px;
+  }
+
+  #carrinho {
+    width: 20px;
+  }
+
+  nav a {
+    padding: 4px;
+  }
+
+  .line {
+    height: 5px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+  }
+
+  .banner-info-text {
+    bottom: 8px;
+  }
+
+  #banner-name {
+    font-size: 18px;
+    margin-left: 8px;
+    text-shadow: 2px 2px #721e78;
+  }
+
+  #banner-browse {
+    margin-right: 8px;
+  }
+
+  #banner-browse h3 {
+    font-size: 16px;
+    text-shadow: 2px 2px #721e78;
+  }
+
+  #banner-button {
+    padding: 2px 2px;
+  }
+
+  #banner-button a {
+    font-size: 16px;
+  }
+
+  #banner {
+    margin: 0px 8px;
+  }
+
+  .card-container {
+    flex-wrap: wrap;
+  }
+
+  .card-body {
+    width: calc(50% - 6px);
+    margin: 3px;
+  }
+
+  .main-card-image {
+    height: 80px;
+  }
+
+  .price {
+    font-size: 15px;
+  }
+
+  .card-button {
+    font-size: 15px;
+    padding: 3px 13px;
+  }
+
+  footer {
+    font-size: 10px;
+    padding: 8px;
+  }
+
+  footer span {
+    margin-left: 0px;
+  }
+
+  #contact span {
+    display: block;
+  }
+
+  .card-body h4 {
+    font-size: 15px;
+  }
+}
+
+.card-body h4 {
+  cursor: pointer;
+}
+
+#dialog-content {
+  display: flex;
+}
+
+#dialog-content img {
+  height: 40vh;
+  border-radius: 4px;
+  margin-right: 18px;
+}
+
+dialog {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 3px 35px 0px rgba(0, 0, 0, 0.85);
+}
+
+#game-info {
+  width: 700px;
+}
+
+#game-info h3 {
+  font-size: 35px;
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 2px #b87fc6;
+}
+
+dialog h4 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 20px;
+}
+
+#game-info p {
+  font-size: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dialog-buttons {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.dialog-buttons button:first-child {
+  margin-right: 15px;
+}
+
+#dialog-message div {
+  display: flex;
+  flex-direction: column;
+}
+
+#dialog-message .card-button {
+  margin-top: 8px;
+}

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/cadastro.css" />
+    <link rel="stylesheet" href="css/responsividade.css" />
+    <meta charset="UTF-8" />
+    <title>Overload Games</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="line"></div>
+    <header>
+      <div id="header-container">
+        <h1 id="title">Overload Games</h1>
+
+        <nav id="links">
+          <a href="index.html">Home</a>
+          <a href="games.html">Jogos</a>
+          <a href="contato.html">Contato</a>
+          <a href="cadastro.html">Cadastro</a>
+          <a href="carrinho.html"
+            ><img
+              id="carrinho"
+              src="imagens/carrinho.png"
+              alt="Carrinho de Compras"
+          /></a>
+        </nav>
+      </div>
+    </header>
+
+    <hr />
+    <main>
+      <h3 class="subtitle" id="highlights">Deseja nos contatar?</h3>
+      <div class="container">
+        <form action="">
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">Nome:</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="text"
+                name="firstname"
+                placeholder="Nome..."
+                id="nome"
+                class="inputError"
+              />
+              <span class="error fname-error"></span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Senha:</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="password"
+                name="password"
+                placeholder="Senha..."
+                id="senha"
+                class="inputError"
+              />
+              <span class="error password-error"></span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Data de nascimento:</label>
+            </div>
+            <div class="col-75">
+              <input type="date" name="date" id="date" class="inputError" />
+              <span class="error date-error"></span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Email:</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="email"
+                name="Email"
+                placeholder="Email..."
+                id="email"
+                class="inputError"
+              />
+              <span class="error email-error"></span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">CPF:</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="number"
+                name="CPF"
+                placeholder="Cpf..."
+                id="cpf"
+                class="inputError"
+              />
+              <span class="error cpf-error"></span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">CEP:</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="number"
+                name="CEP"
+                placeholder="Cep..."
+                id="cep"
+                class="inputError"
+              />
+              <span class="error cep-error"></span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Rua:</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="text"
+                name="rua"
+                placeholder="Rua..."
+                id="logradouro"
+                class="inputError"
+              />
+              <span class="error logradouro-error"></span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Cidade:</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="text"
+                name="Cidade"
+                placeholder="Cidade..."
+                id="localidade"
+                class="inputError"
+              />
+              <span class="error localidade-error"></span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Bairro:</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="text"
+                name="Bairro"
+                placeholder="Bairro..."
+                id="bairro"
+                class="inputError"
+              />
+              <span class="error bairro-error"></span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">UF:</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="text"
+                name="UF"
+                placeholder="uf..."
+                id="uf"
+                class="inputError"
+              />
+              <span class="error uf-error"></span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Numero:</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="number"
+                name="number"
+                placeholder="Numero..."
+                id="numero"
+                class="inputError"
+              />
+              <span class="error number-error"></span>
+            </div>
+          </div>
+
+          <br />
+          <div class="row">
+            <div clas="row-submit">
+              <input id="button" type="submit" value="Enviar" />
+            </div>
+          </div>
+        </form>
+      </div>
+      <dialog id="dialog-message">
+        <div>
+          <h4 id="dialog-message-text"></h4>
+          <button id="dialog-message-close" class="card-button">OK</button>
+        </div>
+      </dialog>
+    </main>
+
+    <div class="div-footer">
+      <hr />
+      <footer id="rodape">
+        <div id="contact">
+          Telefone: (xx) xxxx-xxxx
+          <span>SAC: xxxx xxx xxxx</span>
+          <span>Email: overloadgames@gmail.com</span>
+        </div>
+        <div id="social-media">
+          Nos acompanhe nas redes sociais:
+          <span><a href="">Facebook</a></span>
+          <span><a href="">Instagram</a></span>
+          <span><a href="">Twitter</a></span>
+        </div>
+      </footer>
+      <div class="line"></div>
+    </div>
+
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/xhr.js"></script>
+  </body>
+</html>
